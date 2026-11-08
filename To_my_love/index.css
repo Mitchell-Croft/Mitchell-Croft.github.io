@@ -237,6 +237,14 @@ body {
     margin: 150px;
 }
 
+.valentine2 {
+    text-align: left;
+    font-family: Times New Roman, Helvetica, sans-serif;
+    color:#d3a02b;
+    font-size: 50px;
+    margin: 220px;
+}
+
 /* 1. Create a parent container that wraps everything */
 .page-container {
   position: relative;       /* Crucial: Allows absolute positioning inside it */
