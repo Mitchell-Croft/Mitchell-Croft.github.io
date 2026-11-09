@@ -229,7 +229,7 @@ body {
     color: #d3a02b;
 }
 
-.valentine {
+.word {
     text-align: center;
     font-family: Times New Roman, Helvetica, sans-serif;
     color:#d3a02b;
@@ -237,7 +237,7 @@ body {
     margin: 150px;
 }
 
-.valentine2 {
+.word2 {
     text-align: left;
     font-family: Times New Roman, Helvetica, sans-serif;
     color:#d3a02b;
@@ -245,32 +245,29 @@ body {
     margin: 220px;
 }
 
-/* 1. Create a parent container that wraps everything */
 .page-container {
-  position: relative;       /* Crucial: Allows absolute positioning inside it */
-  max-width: 1200px;        /* Controls how far apart the images can spread */
-  min-height: 600px;        /* Gives the layout breathing room */
-  margin: 0 auto;           /* Centers the entire layout on the screen */
+  position: relative;       
+  max-width: 1200px;        
+  min-height: 600px;        
+  margin: 0 auto;           
   display: flex;
   justify-content: center;
-  align-items: center;      /* Keeps your existing element dead-center */
+  align-items: center;      
 }
 
-/* 2. Base styles for the images */
 .scattered-img {
-  position: absolute;       /* Frees the images from normal layout blocks */
-  width: 220px;             /* Sets a base size */
+  position: absolute;       
+  width: 220px;            
   height: auto;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15); /* Optional: makes them pop */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15); 
   transition: transform 0.3s ease;
 }
 
-/* 3. Manually scatter them with different coordinates and slight tilts */
 .top-left {
   top: 5%;
   left: 2%;
-  transform: rotate(-4deg); /* Organic tilt */
-  width: 240px;             /* Slightly different size breaks uniformity */
+  transform: rotate(-4deg); 
+  width: 240px;             
 }
 
 .top-right {
@@ -293,7 +290,6 @@ body {
   width: 250px;
 }
 
-/* Hover effect just for fun */
 .scattered-img:hover {
   transform: scale(1.05) rotate(0deg);
   z-index: 10;
